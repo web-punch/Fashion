@@ -5,6 +5,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "HKGroteskMedium";
   src: url("../fonts/hkgrotesk-medium-web.woff") format("woff"),
@@ -12,6 +13,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "HKGroteskLight";
   src: url("../fonts/hkgrotesk-light-web.woff") format("woff"),
@@ -19,6 +21,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "HKGroteskBold";
   font-weight: normal;
