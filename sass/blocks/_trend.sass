@@ -1,0 +1,111 @@
+.trend
+  background-color: inherit
+  &__container
+    max-width: 1135px
+    margin: auto
+  &__header
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 48px
+  &__title
+    font-family: HK Grotesk
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    line-height: 60px
+    letter-spacing: 0.2px
+    color: $text-color-1
+    margin: 0
+  &__links
+    min-width: 285px
+    display: flex
+    justify-content: space-between
+  &-link
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 25px
+    color: $text-color-3
+    &__new
+      &--visability
+        color: $text-color-1
+        font-weight: bold
+    &__best
+      &--visability
+        color: $text-color-1
+        font-weight: bold
+    &__soon
+      &--visability
+        color: $text-color-1
+        font-weight: bold
+  &__wrapper
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__item
+    margin-bottom: 50px
+  &-item
+    width: 260px
+    height: 441px
+    &__luxury
+      &--visability
+        order: 2
+    &__minimalist
+      &--visability
+        order: 3
+    &__full
+      &--visability
+        order: -1
+    &__pinky
+      &--visability
+        order: -2
+    &__image
+      width: 100%
+      height: 350px
+      border-radius: 8px
+      overflow: hidden
+    &__title
+      font-family: HK Grotesk
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 32px
+      letter-spacing: 0.2px
+      color: $text-color-1
+      margin-top: 20px
+      margin-bottom: 3px
+      margin-left: 10px
+    &__info
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: space-between
+      padding-left: 10px
+      padding-right: 10px
+    &__price
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 36px
+      color: $text-color-3
+    &__look
+      background-color: $text-color-2
+      text-align: center
+      height: 350px
+      border-radius: 8px
+      padding: 120px 22px 104px 22px
+      order: 8
+    &__text
+      font-family: "HKGroteskBold"
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 32px
+      text-align: center
+      color: $light
+      margin-top: 25px

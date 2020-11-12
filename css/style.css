@@ -604,6 +604,208 @@ template {
   margin-right: 19px;
 }
 
+.trend {
+  background-color: inherit;
+}
+
+.trend__container {
+  max-width: 1135px;
+  margin: auto;
+}
+
+.trend__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.trend__title {
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.2px;
+  color: #183B56;
+  margin: 0;
+}
+
+.trend__links {
+  min-width: 285px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trend-link {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #5A7184;
+}
+
+.trend-link__new--visability {
+  color: #183B56;
+  font-weight: bold;
+}
+
+.trend-link__best--visability {
+  color: #183B56;
+  font-weight: bold;
+}
+
+.trend-link__soon--visability {
+  color: #183B56;
+  font-weight: bold;
+}
+
+.trend__wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.trend__item {
+  margin-bottom: 50px;
+}
+
+.trend-item {
+  width: 260px;
+  height: 441px;
+}
+
+.trend-item__luxury--visability {
+  order: 2;
+}
+
+.trend-item__minimalist--visability {
+  order: 3;
+}
+
+.trend-item__full--visability {
+  order: -1;
+}
+
+.trend-item__pinky--visability {
+  order: -2;
+}
+
+.trend-item__image {
+  width: 100%;
+  height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.trend-item__title {
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  color: #183B56;
+  margin-top: 20px;
+  margin-bottom: 3px;
+  margin-left: 10px;
+}
+
+.trend-item__info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.trend-item__price {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: #5A7184;
+}
+
+.trend-item__look {
+  background-color: #1565D8;
+  text-align: center;
+  height: 350px;
+  border-radius: 8px;
+  padding: 120px 22px 104px 22px;
+  order: 8;
+}
+
+.trend-item__text {
+  font-family: "HKGroteskBold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 25px;
+}
+
+.reviews {
+  background-color: inherit;
+}
+
+.reviews__container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.reviews__swiper-container {
+  width: 100%;
+  padding-top: 95px;
+  padding-bottom: 53px;
+  text-align: center;
+}
+
+.reviews__image {
+  margin-bottom: 24px;
+}
+
+.reviews__text {
+  font-family: "HKGroteskRegular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 42px;
+  letter-spacing: 0.133333px;
+  color: #183B56;
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+
+.reviews__client {
+  font-family: "HKGroteskBold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #183B56;
+  margin-top: 0;
+}
+
+.swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+  background-color: #B3BAC5;
+  margin-right: 16px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #183B56;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 900px;
@@ -630,6 +832,15 @@ template {
   }
   .collection__info {
     width: 100%;
+  }
+  .trend__container {
+    max-width: 900px;
+  }
+  .trend__wrapper {
+    justify-content: space-evenly;
+  }
+  .reviews__container {
+    max-width: 700px;
   }
 }
 
@@ -730,6 +941,42 @@ template {
   .collection__text {
     margin-bottom: 24px;
   }
+  .trend__container {
+    max-width: 608px;
+  }
+  .trend__header {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 56px;
+  }
+  .trend__title {
+    margin-bottom: 28px;
+  }
+  .trend__wrapper {
+    justify-content: space-between;
+  }
+  .trend__item {
+    margin-bottom: 48px;
+  }
+  .trend-item {
+    width: 280px;
+  }
+  .trend__img {
+    width: 100%;
+  }
+  .reviews__container {
+    max-width: 630px;
+  }
+  .reviews__swiper-container {
+    padding-top: 32px;
+    padding-bottom: 33px;
+  }
+  .reviews__swiper__image {
+    margin-bottom: 28px;
+  }
+  .reviews__swiper__text {
+    margin-bottom: 28px;
+  }
 }
 
 @media (max-width: 762px) {
@@ -782,6 +1029,15 @@ template {
   }
   .collection__link {
     display: none;
+  }
+  .trend__container {
+    width: 92%;
+  }
+  .trend-item {
+    width: 255px;
+  }
+  .reviews__container {
+    max-width: 87.5%;
   }
 }
 
@@ -870,6 +1126,85 @@ template {
   .collection__text {
     font-size: 16px;
     line-height: 28px;
+  }
+  .trend__wrapper {
+    justify-content: space-around;
+  }
+  .trend__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .trend__links {
+    min-width: 218px;
+  }
+  .trend-link {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .trend__item {
+    margin-bottom: 20px;
+  }
+  .trend-item {
+    width: 140px;
+    height: 234px;
+  }
+  .trend-item__look {
+    height: 170px;
+    padding-top: 40px;
+    padding-bottom: 23px;
+  }
+  .trend-item__image {
+    width: 100%;
+    height: 170px;
+  }
+  .trend-item__title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 13px;
+    margin-left: 0;
+  }
+  .trend-item__info {
+    padding: 0;
+    justify-content: start;
+  }
+  .trend-item__price {
+    font-size: 14px;
+    line-height: 24px;
+    margin-right: 9px;
+  }
+  .trend-item__basket {
+    width: 14px;
+  }
+  .trend-item__text {
+    font-size: 17px;
+    line-height: 20px;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  .trend-item__plus {
+    width: 25px;
+  }
+  .reviews__swiper-container {
+    padding-top: 28px;
+    padding-bottom: 29px;
+  }
+  .reviews__image {
+    width: 70px;
+    margin-bottom: 13px;
+  }
+  .reviews__text {
+    font-size: 18px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+  .reviews__client {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .trend__wrapper {
+    justify-content: space-between;
   }
 }
 /*# sourceMappingURL=style.css.map */

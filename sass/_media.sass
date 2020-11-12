@@ -20,6 +20,14 @@
         width: 47.9%
     &__info
       width: 100%
+  .trend
+    &__container
+      max-width: 900px
+    &__wrapper
+      justify-content: space-evenly
+  .reviews
+    &__container
+      max-width: 700px
 @media  ( max-width: 992px )
   body
     padding-top: 95px
@@ -102,6 +110,34 @@
       padding: 0 48px 0 0
     &__text
       margin-bottom: 24px
+  .trend
+    &__container
+      max-width: 608px
+    &__header
+      flex-direction: column
+      align-items: center
+      margin-bottom: 56px
+    &__title
+      margin-bottom: 28px
+    &__wrapper
+      justify-content: space-between
+    &__item
+      margin-bottom: 48px
+    &-item
+      width: 280px
+    &__img
+      width: 100%
+  .reviews
+    &__container
+      max-width: 630px
+    &__swiper
+      &-container
+        padding-top: 32px
+        padding-bottom: 33px
+      &__image
+        margin-bottom: 28px
+      &__text
+        margin-bottom: 28px
 @media  ( max-width: 762px )
   .container
     width: 90%
@@ -144,6 +180,14 @@
       padding: 0
     &__link
       display: none
+  .trend
+    &__container
+      width: 92%
+    &-item
+      width: 255px
+  .reviews
+    &__container
+      max-width: 87.5%
 
 @media ( max-width: 576px)
   .navbar
@@ -219,3 +263,65 @@
     &__text
       font-size: 16px
       line-height: 28px
+  .trend
+    &__wrapper
+      justify-content: space-around
+    &__title
+      font-size: 28px
+      line-height: 36px
+    &__links
+      min-width: 218px
+    &-link
+      font-size: 16px
+      line-height: 22px
+    &__item
+      margin-bottom: 20px
+    &-item
+      width: 140px
+      height: 234px
+      &__look
+        height: 170px
+        padding-top: 40px
+        padding-bottom: 23px
+      &__image
+        width: 100%
+        height: 170px
+      &__title
+        font-size: 16px
+        line-height: 20px
+        margin-top: 13px
+        margin-left: 0
+      &__info
+        padding: 0
+        justify-content: start
+      &__price
+        font-size: 14px
+        line-height: 24px
+        margin-right: 9px
+      &__basket
+        width: 14px
+      &__text
+        font-size: 17px
+        line-height: 20px
+        margin-top: 15px
+        margin-bottom: 0
+      &__plus
+        width: 25px
+  .reviews
+    &__swiper
+      &-container
+        padding-top: 28px
+        padding-bottom: 29px
+    &__image
+      width: 70px
+      margin-bottom: 13px
+    &__text
+      font-size: 18px
+      line-height: 36px
+      margin-bottom: 24px
+    &__client
+      padding: 0 30px
+@media ( max-width: 320px)
+  .trend
+    &__wrapper
+      justify-content: space-between
