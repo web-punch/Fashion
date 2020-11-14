@@ -1,0 +1,104 @@
+.history
+  background-color: inherit
+  &__container
+    max-width: 1150px
+    margin: auto
+    padding-top: 201px
+    padding-bottom: 140px
+    display: flex
+    justify-content: space-between
+  &__info
+    max-width: 319px
+    position: relative
+  &__hashtag
+    font-family: Open Sans
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+    padding: 6px 16px
+    background: rgba(54, 179, 126, 0.1)
+    border-radius: 2000px
+    color: #36B37E
+  &__title
+    font-family: "HKGroteskBold"
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    line-height: 60px
+    letter-spacing: 0.2px
+    margin-top: 28px
+    margin-bottom: 24px
+    color: $text-color-1
+  &__text
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 36px
+    color: $text-color-3
+    margin: 0
+  &__slider
+    max-width: 662px
+  &__swiper
+    &-slide
+      // width: 100%
+      padding-top: 10px
+      display: flex
+      justify-content: space-between
+    &-button
+      position: absolute
+      top: 80%
+      width: 58px
+      outline: none
+      &--prev
+        left: 0
+      &--next
+        left: 76px
+      &--disabled
+        opacity: 0.35
+        cursor: default
+  &-item
+    width: 322px
+    height: 475px
+    position: relative
+    // padding-bottom: 158px
+    &__image
+      width: 312px
+      height: 317px
+      background-size: cover
+      background-position-y: center
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 1
+      &--first
+        background-image: url(../img/history-image-1.png)
+      &--second
+        background-image: url(../img/history-image-2.png)
+    &__info
+      width: 312px
+      background-color: #FAFDFF
+      padding: 20px 32px 20px 20px
+      position: absolute
+      right: 0
+      bottom: 0
+      z-index: 2
+
+    &__text
+      font-family: "HKGroteskMedium"
+      font-style: normal
+      font-weight: 500
+      font-size: 22px
+      line-height: 32px
+      letter-spacing: 0.2px
+      color: $text-color-1
+    &__link
+      display: block
+      font-family: Open Sans
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      color: $text-color-2
+      margin-top: 12px

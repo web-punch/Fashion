@@ -58,7 +58,7 @@ $(document).ready(function () {
     itemFull.removeClass('trend-item__full--visability');
     itemPinky.removeClass('trend-item__pinky--visability');
   }
-  var mySwiper = new Swiper('.swiper-container', {
+  var mySwiper = new Swiper('.reviews__swiper-container', {
     // Optional parameters
     // direction: 'vertical',
     loop: true,
@@ -85,4 +85,25 @@ $(document).ready(function () {
       }
     },
   });
+  var mySwiper = new Swiper('.history__swiper-container', {
+    // Optional parameters
+    loop: false,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.history__swiper-button--next',
+      prevEl: '.history__swiper-button--prev',
+      disabledClass: 'history__swiper-button--disabled'
+    },
+  })
+  // Обработка форм
+  $(".newsletter__form").validate({
+    errorClass: "invalid",
+    messages: {
+      email: {
+        required: "Введите ваш email",
+        email: "Ваш email должен быть в формате name@domain.com"
+      },
+    },
+  });
+    
 });

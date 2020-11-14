@@ -28,6 +28,19 @@
   .reviews
     &__container
       max-width: 700px
+  .history
+    &__container
+      max-width: 925px
+    &__title
+      font-size: 40px
+      line-height: 50px
+  .newsletter
+    padding-right: 0
+    &__container
+      max-width: 900px
+  .footer
+    &__container
+      max-width: 900px
 @media  ( max-width: 992px )
   body
     padding-top: 95px
@@ -138,6 +151,52 @@
         margin-bottom: 28px
       &__text
         margin-bottom: 28px
+  .history
+    &__container
+      max-width: 728px
+      flex-direction: column
+      padding-top: 160px
+      padding-bottom: 80px
+    &__info
+      width: 100%
+      max-width: 568px
+      margin: auto
+      text-align: center
+      padding-bottom: 128px
+    &__title
+      margin-top: 24px
+      margin-bottom: 16px
+    &__slider
+      max-width: 682px
+      margin: auto
+    &__swiper
+      &-button
+        left: 48%
+        top: 75%
+        &--next
+          transform: translateX(50%)
+        &--prev
+          transform: translateX(-120%)
+  .newsletter
+    padding-top: 72px
+    padding-bottom: 80px
+    &__container
+      max-width: 450px
+      flex-direction: column
+      align-items: center
+      justify-content: center
+    &__info
+      text-align: center
+      margin-bottom: 57px
+  .footer
+    &__container
+      max-width: 672px
+      padding: 64px 0
+      grid-template-columns: 1fr repeat(2, 165px)
+      column-gap: 29px
+      row-gap: 48px
+    &__info
+      grid-row: span 2
 @media  ( max-width: 762px )
   .container
     width: 90%
@@ -188,7 +247,30 @@
   .reviews
     &__container
       max-width: 87.5%
-
+  .history
+    &__container
+      max-width: 87.5%
+    &__slider
+      margin: 0
+    &__swiper
+      &-slide
+        flex-direction: column
+        align-items: center
+    &-item
+      &:nth-child(1)
+        margin-bottom: 20px
+  .newsletter
+    &__container
+      max-width: 87.5%
+  .footer
+    &__container
+      min-width: 263px
+      width: 83%
+      grid-template-columns: repeat(2, 50%)
+      row-gap: 30px
+    &__info
+      grid-row: 3/4
+      grid-column: span 2
 @media ( max-width: 576px)
   .navbar
     &__wrapper
@@ -321,6 +403,92 @@
       margin-bottom: 24px
     &__client
       padding: 0 30px
+  .history
+    &__container
+      padding-top: 112px
+      padding-bottom: 64px
+    &__info
+      padding-bottom: 110px
+    &__hashtag
+      padding: 2px 12px
+    &__title
+      font-size: 28px
+      line-height: 36px
+    &__text
+      font-size: 16px
+      line-height: 28px
+    &__swiper
+      &-button
+        width: 48px
+      &-slide
+        padding-top: 0
+    &-item
+      width: 280px
+      height: 407px
+      &__image
+        width: 270px
+        height: 277px
+      &__info
+        width: 270px
+        height: 150px
+      &__text
+        font-size: 20px
+        line-height: 24px
+  .newsletter
+    padding: 64px 0 122px 0
+    &__info
+      margin-bottom: 36px
+    &__title
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 24px
+    &__text
+      font-size: 16px
+      line-height: 28px
+    &__input
+      min-width: 280px
+      width: 100%
+      padding: 13px 20px 13px 48px
+    &__button
+      font-size: 18px
+      line-height: 25px
+      padding: 12px 24px
+      left: 0
+      top: 80px
+      min-width: 280px
+      width: 100%
+  .footer
+    &__container
+      grid-template-columns: 1fr
+    &__info
+      grid-column: 1/2
+      grid-row: 5/6
+      width: 100%
+      justify-self: center
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: 37px
+    &__logo
+      margin-bottom: 16px
+    &__text
+      font-size: 14px
+      line-height: 24px
+      text-align: center
+      margin-bottom: 16px
+    &__title
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 20px
+    &__item
+      margin-bottom: 15px
+    &__link
+      font-size: 14px
+      line-height: 20px
+  label.invalid
+    top: -40px
+  .hide
+    display: none
 @media ( max-width: 320px)
   .trend
     &__wrapper
