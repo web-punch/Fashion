@@ -874,6 +874,7 @@ template {
   top: 80%;
   width: 58px;
   outline: none;
+  cursor: pointer;
 }
 
 .history__swiper-button--prev {
@@ -1167,6 +1168,15 @@ label.invalid {
   }
   .footer__container {
     max-width: 900px;
+  }
+}
+
+@media (min-width: 993px) {
+  .link:hover {
+    opacity: 0.5;
+  }
+  .newsletter__button:hover {
+    opacity: 0.5;
   }
 }
 
